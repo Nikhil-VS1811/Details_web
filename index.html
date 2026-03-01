@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Teacher Conference Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1 class="title center">Parent Teacher Conference Form</h1>
+        <p class="description center">Please fill out the form below to help schedule your parent-teacher conference</p>
+        <form>
+            <fieldset>
+                <legend>Student Information</legend>
+                <label for="student-name">Full Name: </label>
+                <input type="text" name="student-name" id="student-name" required placeholder="E.g., Divya VS">
+                
+                <legend for="grade">Student Grade: </legend>
+                <input type="number" name="grade" id="grade" required placeholder="E.g., 5">
+            </fieldset>
+            <fieldset>
+                <legend>
+                    parent/guardian Information 
+                </legend>
+                <label for="parent-name">Parent/Guardian Name: </label>
+                <input type="text" name="parent-name" id="parent-name" required placeholder="E.g., Shobha Venkatesh">
+            </fieldset>
+            <fieldset>
+                <legend>Preferred contact method</legend>
+                <label class="contact-method" for="email">Email: </label>
+                <input id="email" class="contact-method-radio-btn" type="radio" name="contact-method" value="email" checked>
+                <label class="contact-method" for="phone">Phone: </label>
+                <input id="phone" class="contact-method-radio-btn" type="radio" name="contact-method" value="phone">
+            </fieldset>
+            <fieldset>
+                <legend>Enter Contact Details: </legend>
+                <label for="student-mail">Enter email: </label>
+                <input name="student-mail" id="student-mail" type="email" placeholder="E.g., divyavs1811@gmail.com" required>
+                <label for="student-no">Enter Phone number: </label>
+                <input name="student-no" id="student-no" type="text" placeholder="+91 8792711837" required>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Notes</legend>
+                <label for="notes">Any Specific Concerns or topics you'd like to discuss ?</label>
+                <textarea id="notes" name="notes" rowa="4" cols="50">
+                </textarea>
+            </fieldset>
+            <button class="submit-btn" type="submit">Submit Form</button>
+        </form>
+    </main>
+</body>
+</html>
