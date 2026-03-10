@@ -1,2 +1,2 @@
 # Details_web
-Simple frontEnd for the details
+Simple frontEnd for the detail
